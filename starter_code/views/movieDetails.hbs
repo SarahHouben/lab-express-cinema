@@ -1,0 +1,23 @@
+{{#with movie}}
+
+<img src="{{image}}" alt="movie poster">
+
+<a href="/movies">Go back</a>
+
+<h1>{{title}}</h1>
+<h2>{{director}}</h2>
+
+{{!-- //MAKE LIST OUT OF ARRAY --}}
+<h3>Stars</h3>
+{{#each stars}}
+<li>{{this}}</li>
+{{/each}}
+
+<p>{{description}}</p>
+
+{{!-- //MAKE LIST OUT OF ARRAY --}}
+{{#each showtimes}}
+{{this}} |
+{{/each}}
+
+{{/with}}
